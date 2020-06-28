@@ -94,19 +94,19 @@ console.log(contribution(1000, 3));
 let question = prompt('Площадь какой фигуры считать: прямоугольник, треугольник или круг');
 
 function square() {
-    let a = prompt('Введите значение высоты');
-    let b = prompt('Введите значение ширины');
+    let a = +prompt('Введите значение высоты');
+    let b = +prompt('Введите значение ширины');
 
     return a * b;
 }
 function triangle() {
-    let a = prompt('Введите значение основания');
-    let h = prompt('Введите значениее высоты');
+    let a = +prompt('Введите значение основания');
+    let h = +prompt('Введите значениее высоты');
 
     return (a / 2) * h;
 }
 function circle() {
-    let r = prompt('Введите значение радиуса');
+    let r = +prompt('Введите значение радиуса');
 
     return Math.PI * (r ** 2);
 }
