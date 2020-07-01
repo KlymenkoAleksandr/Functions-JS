@@ -37,7 +37,11 @@ dayName(weekDay);
 let num = +prompt('Введите число');
 
 function wholeNum (num) {
-    console.log((num ^ 0) === num);
+    if (num % 2 === 0) {
+    console.log((num));
+    } else {
+        console.log("Число не целое2")
+    }
 }
 
 wholeNum(num);
@@ -57,8 +61,8 @@ result(numb, degree);
 // Задание 4:
 // Написать функцию, которая проверяет делится ли число 1 на число 2 без остачи.
 
-function division(numi, num2) {
-    if (Number.isInteger(numi / num2)) {
+function division(num1, num2) {
+    if (num1 % num2 === 0) {
         return 'Остачи нет';
     } else {
         return 'Первое число на второе число не делится без остачи';
